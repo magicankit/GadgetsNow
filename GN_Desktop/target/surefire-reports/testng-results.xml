@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16044" started-at="2020-01-30T07:28:10Z" finished-at="2020-01-30T07:28:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16044" started-at="2020-01-30T07:28:10Z" finished-at="2020-01-30T07:28:26Z">
+      <class name="tests.Baseclass">
+        <test-method status="PASS" signature="UrlLaunch()[pri:0, instance:tests.Baseclass@22f71333]" name="UrlLaunch" is-config="true" duration-ms="14755" started-at="2020-01-30T12:58:10Z" finished-at="2020-01-30T12:58:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UrlLaunch -->
+        <test-method status="PASS" signature="popup()[pri:0, instance:tests.Baseclass@22f71333]" name="popup" duration-ms="1041" started-at="2020-01-30T12:58:25Z" finished-at="2020-01-30T12:58:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- popup -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:tests.Baseclass@22f71333]" name="closebrowser" is-config="true" duration-ms="226" started-at="2020-01-30T12:58:26Z" finished-at="2020-01-30T12:58:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- tests.Baseclass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
