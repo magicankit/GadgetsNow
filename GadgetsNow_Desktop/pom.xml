@@ -21,6 +21,14 @@
      <version>6.8</version>
      
   </dependency>	
+  
+  <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>javax.mail-api</artifactId>
+    <version>1.5.5</version>
+</dependency>
+
 </dependencies>
 
 <build>
@@ -46,7 +54,74 @@
            </suiteXmlFiles>
            </configuration>
    </plugin>
-   </plugins>  
+   
+   <!-- Post-Man plugin -->
+ <plugin>
+ <groupId>ch.fortysix</groupId>
+ <artifactId>maven-postman-plugin</artifactId>
+ <executions>
+ <execution>
+ 
+ <id>send a mail</id>
+ <phase>test</phase>
+ <goals>
+ <goal>send-mail</goal>
+ </goals>
+ <inherited>true</inherited>
+ 
+ <configuration>
+ <!-- From Email address -->
+ <from>ankit.aroragn@gmail.com</from>
+ 
+ <!--  Email subject -->
+ <subject>GN_Desktop Test Automation Report</subject>
+ 
+ <!-- Fail the build if the mail doesnot reach -->
+ <failonerror>true</failonerror>
+ 
+ <!-- Email Body Content -->
+                          <htmlMessage>
+                                    <![CDATA[
+                                    <p>New Automation Script Executed!</p>
+                                    <p>Attached html file contains the test result status</p> 
+                                    ]]>
+                          </htmlMessage>
+ 
+ <!-- host -->
+ <mailhost>smtp.gmail.com</mailhost>
+ <!-- port of the host -->
+ <mailport>465</mailport>
+ <mailssl>true</mailssl>
+ <mailAltConfig>true</mailAltConfig>
+ 
+ <!-- Email Authentication(USername and Password) -->
+ <mailuser>ankit.aroragn@gmail.com</mailuser>
+ <mailpassword>toitest@123</mailpassword>
+ 
+ <receivers>
+ <!-- To Email address -->
+ <receiver>ankitarora084@gmail.com</receiver>
+ <receiver>ankit.arora@timesinternet.in</receiver>
+ </receivers>
+ 
+ <fileSets>
+ <fileSet>
+ <!-- Report directory Path -->
+ <directory>/users/ankit.arora/Downloads/MAC_Automation/GadgetsNow_Desktop</directory>
+ <includes>
+ <!-- Report file name -->
+ <include>**/*.html</include>
+ </includes>
+ <!-- Use Regular Expressions like **/*.html if you want all the html files to send-->
+ </fileSet>
+ </fileSets> 
+ 
+ </configuration>
+ </execution>
+ </executions>
+ </plugin>
+ 
+ </plugins> 
   </build>
   
 </project>
