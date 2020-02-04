@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="GadgetsNow">
+    <classes>
+      <class name="desktop_tests.Baseclass_desktop"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
