@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="desktop_tests.Baseclass_desktop" hash-for-method="popup">popup</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="desktop_tests.Baseclass_desktop" hash-for-method="UrlLaunch">UrlLaunch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -124,9 +124,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="popup">
-                  </a> <!-- popup -->
-                  <span class="method-name">popup</span>
+                  <a name="UrlLaunch">
+                  </a> <!-- UrlLaunch -->
+                  <span class="method-name">UrlLaunch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,14 +185,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'popup')
+data.setCell(0, 1, 'UrlLaunch')
 data.setCell(0, 2, 'desktop_tests.Baseclass_desktop')
-data.setCell(0, 3, 774);
+data.setCell(0, 3, 40393);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 774 ms</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -219,18 +219,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">desktop_tests.Baseclass_desktop</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">UrlLaunch</span>
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void desktop_tests.Baseclass_desktop.UrlLaunch())</span>
+                <span class="method-start">695 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">popup</span>
-                <span class="method-start">29033 ms</span>
+                <span class="method-name">UrlLaunch</span>
+                <span class="method-start">3659 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">29808 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">44057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">45038 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

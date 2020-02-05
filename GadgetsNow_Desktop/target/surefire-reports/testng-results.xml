@@ -1,48 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[The Browser is opened]]>
-    </line>
-    <line>
-      <![CDATA[GadgetsNow is opened]]>
-    </line>
-    <line>
-      <![CDATA[The Browser is Maximised]]>
-    </line>
-    <line>
-      <![CDATA[Application closed]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="30370" started-at="2020-01-31T11:13:40Z" finished-at="2020-01-31T11:14:10Z">
+  <suite name="Suite" duration-ms="44338" started-at="2020-02-05T07:50:13Z" finished-at="2020-02-05T07:50:57Z">
     <groups>
     </groups>
-    <test name="GadgetsNow" duration-ms="30370" started-at="2020-01-31T11:13:40Z" finished-at="2020-01-31T11:14:10Z">
+    <test name="GadgetsNow" duration-ms="44338" started-at="2020-02-05T07:50:13Z" finished-at="2020-02-05T07:50:57Z">
       <class name="desktop_tests.Baseclass_desktop">
-        <test-method status="PASS" signature="UrlLaunch()[pri:0, instance:desktop_tests.Baseclass_desktop@22f71333]" name="UrlLaunch" is-config="true" duration-ms="29018" started-at="2020-01-31T16:43:40Z" finished-at="2020-01-31T16:44:09Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:desktop_tests.Baseclass_desktop@5f2050f6]" name="beforeSuite" is-config="true" duration-ms="681" started-at="2020-02-05T13:20:12Z" finished-at="2020-02-05T13:20:13Z">
           <reporter-output>
-            <line>
-              <![CDATA[The Browser is opened]]>
-            </line>
-            <line>
-              <![CDATA[GadgetsNow is opened]]>
-            </line>
-            <line>
-              <![CDATA[The Browser is Maximised]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:desktop_tests.Baseclass_desktop@5f2050f6]" name="beforeMethod" is-config="true" duration-ms="2964" started-at="2020-02-05T13:20:13Z" finished-at="2020-02-05T13:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void desktop_tests.Baseclass_desktop.UrlLaunch()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="UrlLaunch()[pri:0, instance:desktop_tests.Baseclass_desktop@5f2050f6]" name="UrlLaunch" duration-ms="40393" started-at="2020-02-05T13:20:16Z" finished-at="2020-02-05T13:20:56Z">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- UrlLaunch -->
-        <test-method status="PASS" signature="popup()[pri:0, instance:desktop_tests.Baseclass_desktop@22f71333]" name="popup" duration-ms="774" started-at="2020-01-31T16:44:09Z" finished-at="2020-01-31T16:44:10Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:desktop_tests.Baseclass_desktop@5f2050f6]" name="closebrowser" is-config="true" duration-ms="961" started-at="2020-02-05T13:20:56Z" finished-at="2020-02-05T13:20:57Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popup -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:desktop_tests.Baseclass_desktop@22f71333]" name="closebrowser" is-config="true" duration-ms="560" started-at="2020-01-31T16:44:10Z" finished-at="2020-01-31T16:44:10Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Application closed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:desktop_tests.Baseclass_desktop@5f2050f6]" name="afterSuite" is-config="true" duration-ms="535" started-at="2020-02-05T13:20:57Z" finished-at="2020-02-05T13:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- desktop_tests.Baseclass_desktop -->
     </test> <!-- GadgetsNow -->
   </suite> <!-- Suite -->
